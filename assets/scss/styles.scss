@@ -1,0 +1,15 @@
+@import "body";
+$color: skyblue;
+
+@keyframes sexy {
+  from {
+    color: orange;
+  }
+  to {
+    color: blue;
+  }
+}
+
+// body {
+//   background-color: $color;
+// }

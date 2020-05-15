@@ -32,10 +32,12 @@ if (loginForm) {
   loginForm.addEventListener("submit", handleFormSubmit);
 }
 
-logoutButton.addEventListener("click", () => {
-  localStorage.removeItem(NICKNAME);
-  return location.reload();
-});
+if (logoutButton) {
+  logoutButton.addEventListener("click", () => {
+    localStorage.removeItem(NICKNAME);
+    return location.reload();
+  });
+}
 
 if (nickname === null) {
   body.className = LOGGED_OUT;
